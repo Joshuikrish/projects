@@ -1,0 +1,151 @@
+/* 
+############
+START of main elements CSS
+############ */
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    border-radius: 1%;
+  }
+  
+  h1 {
+    font-family: lato;
+    font-size: 32pt;
+    margin-bottom: -5px;
+  }
+  
+  h3 {
+    font-family: lato;
+    font-weight: 300;
+    font-size: 14pt;
+  }
+  
+  p,
+  li,
+  span {
+    font-family: lato;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+  
+  label {
+    font-family: lato;
+    font-size: 9pt;
+    font-weight: 100;
+  }
+  
+  blockquote {
+    font-family: lato;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 1.5em;
+    margin: 10px 0px;
+  }
+  
+  strong {
+    text-transform: uppercase;
+  }
+  /* 
+  ############
+  END of main elements CSS
+  ############ */
+  
+  
+  /* 
+  ############
+  START of div#title CSS 
+  ############ */
+  div#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+  /* 
+  ############
+  END of div#title CSS 
+  ############ */
+  
+  /* 
+  ############
+  START of #img-div CSS 
+  ############ */ 
+  
+  div#img-div {
+    background-color: white;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #image {
+    min-width: 200px;
+    max-width: 85%;
+  }
+  
+  .captions {
+    font-family: lato;
+    font-size: 10pt;
+    margin: 10px 0px;
+  }
+  /* 
+  ############
+  END of #img-div CSS 
+  ############ */
+  
+  /* 
+  ############
+  START of #tribute-info CSS 
+  ############ */
+  #tribute-info {
+    margin:0 auto;
+    }
+  
+  div#list-container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: flex-start;
+    }
+  
+  /*  MEDIA QUERY BEGIN*/
+  @media only screen and (max-width: 600px) {
+    div#list-container {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+  }
+  /* MEDIA QUERY END */
+    
+    ul#tribute-list {
+    padding: 15px;
+    }
+    
+    ul#tribute-list > li {
+      line-height: 1.75em;
+    }
+  /* 
+  ############
+  END of #tribute-info CSS 
+  ############ */
+  
+  /* 
+  ############
+  START of footer CSS 
+  ############ */
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center
+  }
+  /* 
+  ############
+  END of footer CSS 
+  ############ */
