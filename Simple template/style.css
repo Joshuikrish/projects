@@ -1,0 +1,137 @@
+body,
+div,
+p,
+menubar {
+  margin: 0;
+  color: white;
+}
+.background {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCyVilaufOrqI-2RZD-yNJgadnl3a8xLFxqg&usqp=CAU)
+    no-repeat center center;
+  height: 100vh;
+  opacity: 0.8;
+  font-family: "Times New Roman", Times, serif;
+  background-size: cover;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.navbar,
+ul {
+  display: flex;
+  padding: 30px;
+}
+
+p,
+li {
+  text-transform: uppercase;
+}
+li {
+  margin-right: 40px;
+}
+ul {
+  margin: -31px;
+  margin-left: 220px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+button {
+  margin-left: 150px;
+  background-color: rgb(88, 199, 199);
+  border: none;
+  padding: 5px;
+  text-align: center;
+  width: 157px;
+  color: #fdfeff;
+  font-size: 19px;
+}
+li:hover {
+  background-color: rgb(0, 115, 119);
+  cursor: pointer;
+}
+.logo,
+button {
+  cursor: pointer;
+}
+.logo {
+  margin-left: 32px;
+  font-size: 21px;
+  color: white !important;
+}
+.contain {
+  margin-top: 197px;
+  text-align: center;
+  font-size: 32px;
+}
+span {
+  color: #00a170;
+}
+.animation {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.elements1,
+.elements3,
+.elements5,
+.elements7,
+.elements9,
+.elements11 {
+  width: 25px;
+  margin-right: 50px;
+  height: 25px;
+  background-color: orange;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.elements2,
+.elements4,
+.elements6,
+.elements8,
+.elements10,
+.elements12 {
+  width: 25px;
+  margin-right: 50px;
+  height: 25px;
+  background-color: yellow;
+  animation-name: blink2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
