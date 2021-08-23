@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black jack</title>
+    <style>
+
+
+body{
+    background-color: rgb(18, 172, 18);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+color: white;
+}
+h1{
+    color: goldenrod;
+}
+li,h3{
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Blackjack</h1>
+    <h2>Want to play a round?
+    </h2>
+    <h2>Cards:
+
+        <span id="first"></span>
+        <span id="second"></span>
+        
+    </h2>
+    <h2 >sum:
+
+        <span id="sum"></span>
+    </h2>
+    
+    
+    <button onclick="startGame()">Start game</button>
+   <h2 id="display"></h2>
+    
+
+   <h3>rules:</h3>
+<ol>
+    <li>you should get sum 21 to win this match</li>
+    <li>if the sum is more than 21 you lose</li>
+    <li>if the sum is less than 21 you got chances</li>
+</ol>        
+
+
+
+
+        <script>
+            alert("you have 5 times to win");
+            count=0
+           
+           function startGame(){
+               count=count+1
+              
+                let first = Math.floor(Math.random() * (11 - 2)) + 4;
+                let second = Math.floor(Math.random() * (11 - 2)) + 4;
+           
+                let message="";
+               c=first+second
+               document.getElementById('first').textContent=first+","
+               document.getElementById('second').textContent=second
+               document.getElementById('sum').textContent=c;
+               if(c<=20){
+                   chance=5-count
+                    message="you have got "+chance+" chance remainning."
+                    
+               }
+               else if(c===21){
+                   message="you got the black jack"
+                    alert("you win");
+                    document.getElementById('display').innerHTML="congratalution you won the game"
+                    setTimeout(function(){
+                        location.reload()
+                        alert('new game started')
+                    },1000);
+                    
+                }
+               else{
+                    message="you lost the game"
+                    alert("you lose");
+                    document.body.innerText="try again";
+                    setTimeout(function(){
+                        location.reload()
+                        alert('new game started')
+                    },1000);
+                }
+                document.getElementById('display').innerHTML=message
+                
+                if(count===5){
+                    setTimeout(function(){ document.body.textContent="you have lost the attempt please try again." }, 1000/1000);
+                    setTimeout(function(){
+                        location.reload()
+                        alert('new game started')
+                    },1000);
+            }
+                }   
+            </script>
+			</body>
+			</html>
